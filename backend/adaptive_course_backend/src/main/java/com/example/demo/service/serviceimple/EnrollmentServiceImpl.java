@@ -14,7 +14,7 @@ import com.example.demo.repository.EnrollmentRepository;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.models.Enrollment;
 import com.example.demo.models.Course;
-import com.example.demo.models.Enrollment;
+
 import com.example.demo.models.Student;
 import com.example.demo.service.EnrollmentService;
 

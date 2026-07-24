@@ -33,6 +33,7 @@ import { NotificationsComponent } from './components/notifications/notifications
 import { TeacherProfileComponent } from './components/teacher-profile/teacher-profile.component';
 import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
 import { AdminManageUsersComponent } from './components/admin-manage-users/admin-manage-users.component';
+import { CourseManagerComponent } from './components/course-manager/course-manager.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { AdminManageUsersComponent } from './components/admin-manage-users/admin
     NotificationsComponent,
     TeacherProfileComponent,
     AdminDashboardComponent,
-    AdminManageUsersComponent
+    AdminManageUsersComponent,
+    CourseManagerComponent
   ],
   imports: [
     BrowserModule,

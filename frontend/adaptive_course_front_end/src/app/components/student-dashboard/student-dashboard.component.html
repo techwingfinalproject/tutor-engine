@@ -15,10 +15,10 @@
       <button mat-button color="primary" routerLink="/courses">Browse Courses</button>
     </div>
     <mat-list *ngIf="!loading && enrollments.length > 0">
-      <mat-list-item *ngFor="let enrollment of enrollments" (click)="goToCourse(enrollment.course.id)" class="clickable-item">
+      <mat-list-item *ngFor="let enrollment of enrollments" (click)="goToCourse(enrollment.course.courseId)" class="clickable-item">
         <mat-icon matListItemIcon>book</mat-icon>
-        <div matListItemTitle>{{ enrollment.course.title }}</div>
-        <div matListItemLine>Progress: {{ enrollment.progress }}%</div>
+        <div matListItemTitle>{{ enrollment.course.courseName }}</div>
+        <div matListItemLine>Status: {{ enrollment.status }}</div>
       </mat-list-item>
     </mat-list>
   </div>

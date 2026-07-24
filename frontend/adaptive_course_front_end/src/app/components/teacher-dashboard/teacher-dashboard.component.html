@@ -22,10 +22,10 @@
     </div>
     
     <mat-list *ngIf="!loading && myCourses.length > 0">
-      <mat-list-item *ngFor="let course of myCourses" (click)="manageCourse(course.id)" class="clickable-item">
+      <mat-list-item *ngFor="let course of myCourses" (click)="manageCourse(course.courseId)" class="clickable-item">
         <mat-icon matListItemIcon>edit</mat-icon>
-        <div matListItemTitle>{{ course.title }}</div>
-        <div matListItemLine>{{ course.level }}</div>
+        <div matListItemTitle>{{ course.courseName }}</div>
+        <div matListItemLine>{{ course.duration }} weeks</div>
       </mat-list-item>
     </mat-list>
   </div>

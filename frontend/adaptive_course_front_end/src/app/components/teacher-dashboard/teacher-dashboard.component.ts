@@ -49,7 +49,6 @@ export class TeacherDashboardComponent implements OnInit {
   }
 
   manageCourse(courseId: number): void {
-    // Typically routes to a course manager view
-    this.router.navigate(['/courses']); // Fallback to list for now
+    this.router.navigate([`/teacher/courses/${courseId}/manage`]);
   }
 }

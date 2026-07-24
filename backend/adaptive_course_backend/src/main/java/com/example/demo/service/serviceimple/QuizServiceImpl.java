@@ -12,7 +12,7 @@ import com.example.demo.repository.LessonRepository;
 import com.example.demo.repository.QuizRepository;
 import com.example.demo.models.Quiz;
 import com.example.demo.models.Lesson;
-import com.example.demo.models.Quiz;
+
 import com.example.demo.service.QuizService;
 @Service
 public class QuizServiceImpl implements QuizService {

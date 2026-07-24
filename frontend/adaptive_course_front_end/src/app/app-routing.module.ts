@@ -12,6 +12,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AccessDeniedComponent } from './components/access-denied/access-denied.component';
 import { StudentRegistrationComponent } from './components/student-registration/student-registration.component';
 import { QuizViewComponent } from './components/quiz-view/quiz-view.component';
+import { CourseManagerComponent } from './components/course-manager/course-manager.component';
 import { StudentProfileComponent } from './components/student-profile/student-profile.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { TeacherProfileComponent } from './components/teacher-profile/teacher-profile.component';
@@ -30,10 +31,11 @@ const routes: Routes = [
   { path: 'student/dashboard', component: StudentDashboardComponent, canActivate: [studentGuard] },
   { path: 'student/profile', component: StudentProfileComponent, canActivate: [studentGuard] },
   { path: 'student/notifications', component: NotificationsComponent, canActivate: [studentGuard] },
-  { path: 'student/quiz/:id', component: QuizViewComponent, canActivate: [studentGuard] },
+  { path: 'student/lesson/:lessonId/quiz', component: QuizViewComponent, canActivate: [studentGuard] },
   { path: 'teacher/dashboard', component: TeacherDashboardComponent, canActivate: [teacherGuard] },
   { path: 'teacher/profile', component: TeacherProfileComponent, canActivate: [teacherGuard] },
   { path: 'teacher/courses/new', component: CourseCreatorComponent, canActivate: [teacherGuard] },
+  { path: 'teacher/courses/:id/manage', component: CourseManagerComponent, canActivate: [teacherGuard] },
   { path: 'admin/dashboard', component: AdminDashboardComponent, canActivate: [adminGuard] },
   { path: 'admin/users', component: AdminManageUsersComponent, canActivate: [adminGuard] },
   { path: 'course/:id/learn', component: CourseLearningComponent, canActivate: [AuthGuard] },

@@ -12,7 +12,7 @@ import com.example.demo.repository.CourseRepository;
 import com.example.demo.repository.LessonRepository;
 import com.example.demo.models.Lesson;
 import com.example.demo.models.Course;
-import com.example.demo.models.Lesson;
+
 import com.example.demo.service.LessonService;
 @Service
 public class LessonServiceImpl implements LessonService {

@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.repository.CourseRepository;
 import com.example.demo.repository.TeacherRepository;
 import com.example.demo.models.Course;
-import com.example.demo.models.Course;
+
 import com.example.demo.models.Teacher;
 import com.example.demo.service.CourseService;
 @Service

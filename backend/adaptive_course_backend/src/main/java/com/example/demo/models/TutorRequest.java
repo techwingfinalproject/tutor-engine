@@ -1,6 +1,4 @@
 package com.example.demo.models;
-import java.util.List;
-import java.util.Map;
 public class TutorRequest {
     private String lessonTitle;
     private String lessonDescription;

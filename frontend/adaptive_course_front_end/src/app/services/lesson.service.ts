@@ -13,4 +13,8 @@ export class LessonService {
   getLessonsByCourse(courseId: number | string): Observable<any[]> {
     return this.http.get<any[]>(`${this.apiUrl}/course/${courseId}`);
   }
+
+  createLesson(lessonData: any): Observable<any> {
+    return this.http.post<any>(this.apiUrl, lessonData);
+  }
 }
